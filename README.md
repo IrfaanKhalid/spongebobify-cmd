@@ -3,7 +3,7 @@
 
 ## Instructions
 1. Navigate to ```spongebobify-cmd/out/production/spongebobify-cmd```
-2. Type '''java spongebobify <INSERT TEXT TO SPONGEBOBIFY HERE>```
+2. Type ```java spongebobify <INSERT TEXT TO SPONGEBOBIFY HERE>```
 3. See spongebobified text printed to your terminal
 
 ## Example
