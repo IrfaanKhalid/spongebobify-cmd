@@ -1,12 +1,13 @@
-/*
- * Irfaan Khalid
- * 09/27/2017
+/**
+ * @author Irfaan Khalid
+ * @version 1.1.0
  *
- * Description: Spongebobifies text via command line
+ * Spongebobifies text via the command line. See documentation on GitHub
+ * at https://github.com/IrfaanKhalid/spongebobify-cmd for more info.
  */
 
 public class spongebobify {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         StringBuilder argsStringBuilder = new StringBuilder();
 
         // Concatenate elements of args
@@ -14,13 +15,16 @@ public class spongebobify {
             argsStringBuilder.append(a).append(" ");
         }
 
+        // Remove last whitespace
+        argsStringBuilder.deleteCharAt(argsStringBuilder.length() - 1);
+
         // Obtain and print String
-        String input = argsStringBuilder.toString().trim();
+        String input = argsStringBuilder.toString();
         System.out.println("\n" + spongebobifyText(input) + "\n");
     }
 
     /**
-     * spongebobify - returns the spongebobified version of an input String
+     * Returns the spongebobified version of an input String
      * @param input - user input
      * @return input, but spongebobified
      */
